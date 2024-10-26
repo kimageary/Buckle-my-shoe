@@ -1,0 +1,22 @@
+<!-- home.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Buckle My Shoe</h1>
+    <h3>Enter a number 1-10 to see what you should do!</h3>
+    <form action="/" method="POST">
+        <label for="number">Enter a number:</label>
+        <input type="text" id="number" name="number">
+        <button type="submit">Submit</button>
+    </form>
+
+    <% if (message) { %>
+        <p class="result"><%= message %></p> 
+    <% } %>
+</body>
+</html>
